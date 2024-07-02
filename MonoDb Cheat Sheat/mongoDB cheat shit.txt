@@ -1,0 +1,46 @@
+show dbs_---
+For Seeing the database in our syestm
+
+use db_---
+For Using Data Base
+
+Show collection__--
+For seeing collections  of Database
+
+And Then There are CRUD Operatiion_---
+C_reate Means(insert , insertOne , insertMany)
+R_ead Means (Find, FindOne, FindMany)
+U_pdate Means(update , updateOne , updateMany)
+D_elete Means (Delete the Database with [drop() dataBase] [drop() collections] and Except this There is Delete Method also (DeleteOne , DeleteMany)
+
+We use opearator also like or , nd , lt , gt , gte , lte etc.._-------
+
+Monodb Genrate Random Id But We can Create our own id also in Mongodb_-----
+
+
+
+
+
+MOngodb Aggregation
+ GUI Graphical User Interface
+ CUI Command User Interface
+
+Cheat Sheat Code for Count Data____-------
+db.Users.aggregate([{$count:"total"}])
+
+cheat Sheat Code for find data with match method()_____----
+db.Users.aggregate([{{$match:"size"},{"size":"medium"}}])
+
+Cheat Sheat Code for sort the Data  in Desending Means Here data will come squence__----
+db.Users.aggregate([{$sort:{"price":-1}}]) Desending Order
+
+Cheat Sheat Code for sort the Data  in Assending Means Here data will come in End to Start squence__----
+db.Users.aggregate([{$sort:{"price":1}}])  Assending Order
+
+This Use for Adding Data in our Collection_-----
+db.Users.aggregate([{$addFields:{"grade":"A"}}])
+
+This cheat sheat use to give limit and add data in collection Limit Means(yaha hum limit add karte jin bhi documents ko hum print karwana chahte hain) 
+db.Users.aggregate([{$addFields:{"Course":"MERN"}},{$limit:12}])
+ 
+
